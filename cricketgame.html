@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bat Ball Stump Game</h1>
+
+    <button
+      onclick="
+  // this will generate random number between zero and three.
+  generateComputerChoice();
+
+
+ resultMsg;
+  if(computerChoice ==='Ball'){
+    resultMsg='User Won';   
+  }else if(computerChoice==='Bat'){
+    resultMsg=`It's a tie`;
+  }else if(computerChoice==='Stump'){
+    resultMsg='Computer Won';
+  }
+  alert(`you have chosen Bat. Computer choice is ${computerChoice} and ${resultMsg}`);
+  "
+    >
+      Bat
+    </button>
+
+    <button
+      onclick="
+  // this will generate random number between zero and three.
+  randomNum=Math.random()*3;
+   computerChoice;
+   generateComputerChoice();
+
+   resultMsg;
+  if(computerChoice ==='Ball'){
+    resultMsg=`It's a tie`;   
+  }else if(computerChoice==='Bat'){
+    resultMsg='Computer Won';
+  }else if(computerChoice==='Stump'){
+    resultMsg='User Won';
+  }
+  alert(`you have chosen Ball. Computer choice is ${computerChoice} and ${resultMsg}`);
+  "
+    >
+      Ball
+    </button>
+
+    <button
+      onclick="// this will generate random number between zero and three.
+  randomNum=Math.random()*3;
+   computerChoice;
+ generateComputerChoice();
+
+ resultMsg;
+ if(computerChoice ==='Ball'){
+   resultMsg=`Computer Won`;   
+ }else if(computerChoice==='Bat'){
+   resultMsg='User Won';
+ }else if(computerChoice==='Stump'){
+   resultMsg=`it's a tie`;
+ }
+ alert(`you have chosen Stump. Computer choice is ${computerChoice} and ${resultMsg}`);
+ "
+    >
+      Stamp
+    </button>
+
+    <!-- we can use cript tag and define variables in it to use the same variable in each button -->
+
+    <script>
+      let computerChoice;
+      let randomNum = Math.random() * 3;
+
+      let resultMsg;
+      function generateComputerChoice() {
+        if (randomNum > 0 && randomNum <= 1) {
+          computerChoice = "Bat";
+          // console.log('Computer choice is Bat');
+        } else if (randomNum > 1 && randomNum <= 2) {
+          computerChoice = "Ball";
+          // console.log('Computer choice is Ball');
+        } else {
+          computerChoice = "Stump";
+          // console.log('Computer choice is Stump');
+        }
+      }
+    </script>
+
+    <!-- !(Note:) we need to define function in script tAG TO MAKE it available for each button onclick action to work properly and we call that function to prove that action. -->
+  </body>
+</html>
