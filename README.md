@@ -17,14 +17,7 @@ To get started with any of the projects in this repository, follow these steps:
     ```sh
     cd javascript-lover-projects
     ```
-3. **Install dependencies**: 
-    ```sh
-    npm install
-    ```
-4. **Run the project**: 
-    ```sh
-    npm start
-    ```
+3. **Improve codes and send me pull requests**
 
 ## 🤝 Contributing
 We welcome contributions from everyone! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request. Let's make this repository even better together!
