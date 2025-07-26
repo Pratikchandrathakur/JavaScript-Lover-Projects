@@ -17,7 +17,6 @@ function shelfArrange(){
     appleShelf.textContent=apples;
     orangeShelf.textContent=oranges;
 }
-shelfArrange()
 // and the oranges onto the orangeShelf. Use a for loop,
 // a conditional statement, and the textContent property.
 
