@@ -51,4 +51,4 @@ This project is for educational purposes.
 
 ---
 
-*Created by Pratikchandrathakur*
+*Created by Pratik chandra thakur*
