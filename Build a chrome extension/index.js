@@ -4,6 +4,9 @@ const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
 // Get the leads from the localStorage - PS: JSON.parse()
+let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
+
+console.log(leadsFromLocalStorage)
 // Store it in a variable, leadsFromLocalStorage
 // Log out the variable
 localStorage.clear()
