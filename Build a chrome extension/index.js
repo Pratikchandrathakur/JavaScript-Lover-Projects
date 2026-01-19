@@ -9,7 +9,7 @@ let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 console.log(leadsFromLocalStorage)
 // Store it in a variable, leadsFromLocalStorage
 // Log out the variable
-localStorage.clear()
+localStorage.clear() //remove this line
 let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 
 console.log(leadsFromLocalStorage)
